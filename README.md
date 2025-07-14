@@ -1,2 +1,3 @@
 # web-project1
-web project description
+smart timetable generator
+
