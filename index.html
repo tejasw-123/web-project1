@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Timetable Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Smart Timetable Generator</h1>
+
+  <form id="timetableForm">
+    <label>Enter Subjects (comma-separated):</label><br>
+    <input type="text" id="subjects" placeholder="Math, Science, English" required><br><br>
+
+    <label>Available Study Hours per Day:</label><br>
+    <input type="number" id="hoursPerDay" min="1" max="12" required><br><br>
+
+    <label>Select Study Days:</label><br>
+    <select id="studyDays" multiple>
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+      <option value="Thursday">Thursday</option>
+      <option value="Friday">Friday</option>
+      <option value="Saturday">Saturday</option>
+      <option value="Sunday">Sunday</option>
+    </select><br><br>
+
+    <button type="submit">Generate Timetable</button>
+  </form>
+
+  <div id="outputTimetable"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
